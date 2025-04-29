@@ -7,8 +7,18 @@
 </head>
 <body>
     <h1>🐾 Cat Quest: Doughnut Rescue 🐾</h1>
-    <p>Help the kittens find their doughnuts! Solve math problems to progress.</p>
-    <div id="game-container"></div>
+    <div id="game">
+        <div id="level-info">Level 1 - Kittenville</div>
+        <div id="question-box">
+            <p id="question-text">Loading question...</p>
+            <input type="text" id="answer" placeholder="Your answer">
+            <button onclick="submitAnswer()">Submit</button>
+            <p id="feedback"></p>
+            <button onclick="getHint()">Hint</button>
+        </div>
+        <div id="score-box">Score: 0</div>
+        <div id="badge-box"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
